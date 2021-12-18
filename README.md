@@ -31,6 +31,10 @@ SELECT cron.unschedule(42);
  unschedule
 ------------
           t
+
+-- view jobs
+select * from cron.job_run_details;
+          
 ```
 
 ## Referências:
