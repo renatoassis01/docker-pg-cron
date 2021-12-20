@@ -45,6 +45,10 @@ select * from cron.job_run_details;
           
 ```
 
+## use cases:
+
+https://github.com/citusdata/pg_cron#example-use-cases
+
 ## Referências:
 
 https://github.com/citusdata/pg_cron
