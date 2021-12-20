@@ -1,6 +1,14 @@
 # docker-pg-cron
 Dockerfile with extension pg_cron 
 
+## setup
+
+```bash
+docker-compose up --build
+```
+
+## how use
+
 ```sql
 -- Delete old data on Saturday at 3:30am (GMT)
 SELECT cron.schedule('30 3 * * 6', $$DELETE FROM events WHERE event_time < now() - interval '1 week'$$);
