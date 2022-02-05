@@ -6,6 +6,11 @@ Dockerfile with extension pg_cron
 ```bash
 docker-compose up --build
 ```
+connect with superuser `postgres` in database `postgres` run command:
+
+```sql
+CREATE EXTENSION pg_cron;
+```
 
 ## how use
 
@@ -49,7 +54,7 @@ select * from cron.job_run_details;
 
 https://github.com/citusdata/pg_cron#example-use-cases
 
-## Referências:
+## References:
 
 https://github.com/citusdata/pg_cron
 
